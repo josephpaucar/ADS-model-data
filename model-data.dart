@@ -342,6 +342,10 @@ class Attraction {
   final String socialUrl;
   final String reference;
   final String shortDescription;
+  final List<String> imageUrls;
+  final bool tieneHospedaje;
+  final bool tieneTurismo;
+  final bool tieneAlimentacion;
 
   Attraction(
     this.id,
@@ -351,81 +355,52 @@ class Attraction {
     this.socialUrl,
     this.reference,
     this.shortDescription,
+    this.tieneHospedaje,
+    this.tieneTurismo,
+    this.tieneAlimentacion,
+    this.imageUrls,
   );
 
   static final attractoins = [
     Attraction(
-        1,
-        'Cataratas de Sabaloyacu',
-        -6.4022795,
-        -76.2834683,
-        'https://facebook.com',
-        'Reserva natural',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
+      1,
+      'Cataratas de Sabaloyacu',
+      -6.4022795,
+      -76.2834683,
+      'https://facebook.com',
+      'Reserva natural',
+      'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.',
+      true,
+      true,
+      false,
+      ['Cataratas-de-Sabaloyacu-1.jpg', 'Cataratas-de-Sabaloyacu-2.png'],
+    ),
     Attraction(
-        2,
-        'Fundo Alto Nieva',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
+      2,
+      'Cataratas de Sabaloyacu',
+      -6.4022795,
+      -76.2834683,
+      'https://facebook.com',
+      'Reserva natural',
+      'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.',
+      true,
+      true,
+      false,
+      ['Cataratas-de-Sabaloyacu-1.jpg', 'Cataratas-de-Sabaloyacu-2.png'],
+    ),
     Attraction(
-        3,
-        'Atractivo 3',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        4,
-        'Atractivo 4',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        5,
-        'Atractivo 5',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        6,
-        'Atractivo 6',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        7,
-        'Atractivo 7',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        8,
-        'Atractivo 8',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
-    Attraction(
-        9,
-        'Atractivo 9',
-        2.33,
-        2.44,
-        'https://facebook.com',
-        'Cerca a la estación del tren',
-        'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
+      3,
+      'Cataratas de Sabaloyacu',
+      -6.4022795,
+      -76.2834683,
+      'https://facebook.com',
+      'Reserva natural',
+      'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.',
+      true,
+      true,
+      false,
+      ['Cataratas-de-Sabaloyacu-1.jpg', 'Cataratas-de-Sabaloyacu-2.png'],
+    ),
   ];
 }
 
