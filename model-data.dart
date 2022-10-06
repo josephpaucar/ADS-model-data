@@ -40,7 +40,7 @@ class Bird {
       'Ortalis guttata',
       'Chachalaca Jaspeada',
       'assets/images/Speckled-Chachalaca.jpg',
-      [0, 1],
+      [1, 2],
       true,
       'CRACIDAE',
       "cha-cha'LAH-kah!",
@@ -57,7 +57,7 @@ class Bird {
       'Cathartes aura',
       'Gallinazo de Cabeza Roja',
       'assets/images/ave-ejemplo.jpg',
-      [0, 1],
+      [1, 2],
       false,
       'CATHARTIDAE',
       "",
@@ -340,22 +340,27 @@ class Attraction {
   final double latitud;
   final double longitud;
   final String socialUrl;
-  final String shortDescription;
   final String reference;
-  final String district;
+  final String shortDescription;
 
-  Attraction(this.id, this.name, this.latitud, this.longitud, this.socialUrl,
-      this.reference, this.district, this.shortDescription);
+  Attraction(
+    this.id,
+    this.name,
+    this.latitud,
+    this.longitud,
+    this.socialUrl,
+    this.reference,
+    this.shortDescription,
+  );
 
   static final attractoins = [
     Attraction(
         1,
-        'Llanteria',
-        2.33,
-        2.44,
+        'Cataratas de Sabaloyacu',
+        -6.4022795,
+        -76.2834683,
         'https://facebook.com',
-        'Cerca a la estación del tren',
-        'San Martin',
+        'Reserva natural',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         2,
@@ -364,7 +369,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         3,
@@ -373,7 +377,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         4,
@@ -382,7 +385,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         5,
@@ -391,7 +393,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         6,
@@ -400,7 +401,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         7,
@@ -409,7 +409,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         8,
@@ -418,7 +417,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
     Attraction(
         9,
@@ -427,7 +425,6 @@ class Attraction {
         2.44,
         'https://facebook.com',
         'Cerca a la estación del tren',
-        'San Martin',
         'Magna nulla proident consequat irure labore laboris minim dolore et laborum veniam veniam velit. Deserunt id nostrud fugiat duis irure deserunt culpa sit excepteur ad do cupidatat. Magna voluptate laboris sit est qui nostrud mollit ex mollit officia ut.'),
   ];
 }
